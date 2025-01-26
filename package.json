@@ -1,0 +1,30 @@
+{
+  "name": "my-phaser-game",
+  "version": "0.0.0",
+  "script": {
+    "dev": "vite",
+    "buildtsc": "tsc && vite build && phaser-asset-pack-hashing -j -r dist",
+    "build": "vite build && phaser-asset-pack-hashing -j -r dist",
+    "preview": "vite preview",
+    "editor": "phasereditor2d-launcher -project . -port 1959",
+    "editor-remote": "phasereditor2d-launcher -project . -disable-open-browser -public -port 1959"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "gh-pages": "^6.3.0",
+    "phaser-asset-pack-hashing": "^1.0.5",
+    "typescript": "^4.4.4",
+    "vite": "^6.0.11"
+  },
+  "dependencies": {
+    "mobx": "^6.5.0",
+    "phaser": "^3.55.2",
+    "phaser3-rex-plugins": "^1.1.68",
+    "phasereditor2d-launcher": "^3.31.2"
+  },
+  "scripts": {
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
+  }
+  
+}
